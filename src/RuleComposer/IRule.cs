@@ -7,7 +7,7 @@ namespace RuleComposer
 {
     public interface IRule<T>
     {
-        IRule<T> When(Predicate<T> condition);
+        void When(Predicate<T> condition);
 
         void Then(Action<T> action);
 

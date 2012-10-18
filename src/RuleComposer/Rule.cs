@@ -14,10 +14,10 @@ namespace RuleComposer
         {
 
         }
-        public IRule<T> When(Predicate<T> condition)
+        public void When(Predicate<T> condition)
         {
             this.Condition = condition;
-            return this;
+           
         }
 
         public void Then(Action<T> action)
