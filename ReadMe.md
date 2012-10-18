@@ -4,7 +4,7 @@ For Now ,Please read the Test project to understand ,Will be blogging about it s
 
 How the rule Code looks .You can see in GIST.
 
-https://gist.github.com/3909943.js?file=CustomerSpecification.cs
+https://gist.github.com/3909943
 
 
 Dont miss the Scanner code . That's plays the Key Role
