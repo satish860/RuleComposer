@@ -23,6 +23,7 @@ namespace RuleComposer
         public IRule<T> When(Predicate<T> Condition)
         {
             IRule<T> rule = new Rule<T>();
+            SpecificationRules.Add(rule);
             rule.When(Condition);
             return rule;
         }

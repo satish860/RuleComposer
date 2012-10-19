@@ -17,8 +17,8 @@ namespace RuleComposer.Test
         {
             IRule<Customer> rule = new Rule<Customer>();
             rule.When(p => p.PurchasedAmount >= 10000);
-            rule.Then(p => p.customerType = CustomerType.Premium);
-            rule.Execute(new Customer { PurchasedAmount = 100001 }).customerType.Should().Be(CustomerType.Premium);
+            rule.Then(p => p.customerType = CustomerType.Normal);
+            rule.Execute(new Customer { PurchasedAmount = 100001 }).customerType.Should().Be(CustomerType.Normal);
         }
     }
 
